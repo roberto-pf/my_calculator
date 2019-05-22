@@ -4,9 +4,9 @@
 		<title>Calculator</title>
 		<meta charset="utf-8"> 
 		<script type="text/javascript">
-			function cube() {  
+			function potencia(exponente) {  
 				var num = document.getElementById("n1");  
-				num.value = Math.pow(num.value, 3); 
+				num.value = Math.pow(num.value, exponente); 
 			} 
 			function sin() {  
 				var num = document.getElementById("n1");  
@@ -18,7 +18,8 @@
 		<h1>Calculadora de Roberto Pérez Fernández</h1>  
 		Number:  <input type="text" id="n1">  
 		<p>    
-			<button onclick="cube()"> x^3 </button>
+			<button onclick="potencia(3)"> x^3 </button> 
+			<button onclick="potencia(4)"> x^4 </button> 
 			<button onclick="sin()"> sin x </button>			
 		</p> 
 	</body> 
